@@ -1,8 +1,8 @@
 package co.com.udea.plandeestudio.web.controller.unidadacademica;
 
+import co.com.udea.plandeestudio.domain.input.InputPortUnidadAcademica;
 import co.com.udea.plandeestudio.domain.model.Mensaje;
 import co.com.udea.plandeestudio.domain.model.UnidadAcademica;
-import co.com.udea.plandeestudio.domain.service.unidadacademica.UnidadAcademicaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,10 @@ import java.util.List;
 public class UnidadAcademicaRest {
     public static final String UNIDAD_ACADEMICA = "/unidadAcademica";
 
-    private final UnidadAcademicaService service;
+    private final InputPortUnidadAcademica service;
 
     @Autowired
-    public UnidadAcademicaRest(UnidadAcademicaService service) {
+    public UnidadAcademicaRest(InputPortUnidadAcademica service) {
         this.service = service;
     }
 

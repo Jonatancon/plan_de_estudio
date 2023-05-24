@@ -1,6 +1,7 @@
 package co.com.udea.plandeestudio.domain.service.unidadacademica;
 
 import co.com.udea.plandeestudio.domain.errorhandler.BadResponseHandler;
+import co.com.udea.plandeestudio.domain.input.InputPortUnidadAcademica;
 import co.com.udea.plandeestudio.domain.model.UnidadAcademica;
 import co.com.udea.plandeestudio.domain.model.enums.Responses;
 import co.com.udea.plandeestudio.domain.repository.unidadacademica.UnidadAcademicaRepository;
@@ -12,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class UnidadAcademicaService {
+public class UnidadAcademicaService implements InputPortUnidadAcademica {
     private final UnidadAcademicaRepository repository;
 
     @Autowired
